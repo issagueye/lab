@@ -1,0 +1,265 @@
+
+.navpos {
+	width: 75%;
+	position: relative;
+	left: 5%;
+}
+
+.container-fluid
+{
+	width: 75%;
+
+}
+.cache
+{
+	
+	margin-right: 5%;
+}
+.navbar
+{
+	margin-bottom: 5%;
+}
+#sideNav{
+	z-index: 2;
+     position:fixed;
+     left: 3%;
+     top: 50%;
+     background-color: grey;
+     align-content: center;
+     
+}
+#sideNav li
+{
+	display: block;
+	position: relative;
+	margin-top: 30%;
+	padding-right: 10%;
+	width: 100%;
+}
+
+.container-fluid h2 
+{
+	text-align: center;
+}
+#loc
+{
+	border-bottom: 2px solid #000;
+	margin-bottom: 1%;
+}
+.addr
+{
+	margin-right: 16%;
+}
+#infosGene
+{
+	margin-top: 2%;
+	/*border-bottom: 2px solid #000;*/
+}
+.col-sm-6 .form-control
+{
+	position: relative;
+	width: 50%;
+}
+/*.col-sm-6 label
+{
+	width: 40%;
+}*/
+
+.form-control 
+{
+	width: 20%;
+}
+#formCorp label 
+{
+	width: 100%;
+}
+#formCorp .form-control
+{
+	min-width: 20%;
+}
+#formCorp label
+{
+	display: block;
+	float: left;
+	margin-right: 2%;
+}
+#transmisA,#richesse
+{
+     margin-top : -4.7%;
+     position: absolute;
+	width: 50%;
+	margin-left: 40%;
+
+}
+#thromb
+{
+	position: absolute;
+	width: 50%;
+}
+#thromb input
+{
+	width: 30%;
+}
+#transmisA input,#richesse input
+{
+	width: 30%;
+}
+#thrombRight
+{
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	margin-top: 10%;
+}
+#thrombRight textarea,#conc textarea
+{
+	position: relative;
+	width: 85%;
+}
+
+#part
+{
+	border-bottom: 2px solid #000;
+}
+form
+{
+	
+	margin-top: 6%;
+}
+#numeration span
+{
+	display: block;
+	position: absolute;
+	margin-left: 23%;
+	margin-top: -4%;
+}
+#numeration input
+{
+	margin-left: 10%;
+	margin-bottom: 3%;
+}
+#tabSpermo td
+{
+	text-align: center;
+}
+#tabSpermo input
+{
+	position: relative;
+	display: block;
+	float: left;
+	width: 20%;
+}
+#bas label
+{
+	display: block;
+	position: relative;
+	width: 30%;
+	text-align: center;
+}
+#bas textarea
+{
+	display: block;
+	position: relative;
+	width: 50%;
+}
+#formule label
+{
+	display: block;
+	position: relative;
+	width: 7%;
+}
+#nav,#navRight
+{
+	background-color: lightgrey;
+}
+#nav li a,#navRight li a
+{
+	text-decoration: none;
+	color:black;
+	/*box-shadow: 0.5px 0.5px 0.5px 0.5px white;*/
+}
+
+
+#navRight ul
+{
+	position: relative;
+	width: 100%;
+	background-color: #0072bc;
+	color:black;
+}
+
+
+
+nav .container-fluid .pull-left
+{
+	margin-right: 5%;
+	position: relative;
+	height: 100%;
+}
+nav .container-fluid .collapse #nav
+{
+	position: relative;
+	width: 70%;
+	height: 70%;
+	margin-top: 2.5%;
+	
+
+	margin-left: 5%;
+	text-align: center;
+	height: 100%;
+	vertical-align: middle;
+}
+nav .container-fluid .collapse ul:nth-child(2)
+{
+	position: relative;
+	width: 15%;
+	height: 70%;
+	margin-top: 2.5%;
+}
+#nav li 
+{
+	position: relative;
+	width: 20%;
+	color:black;
+}
+#conteneur
+{
+	margin-top: 5%;
+}
+nav #topNav
+{
+
+}
+#topNav
+{
+	position: relative;
+	background-color: #0072bc;
+}
+#topNav li a:hover
+{
+	background-color: #848484;
+	color:white;
+}
+/*.active > a
+{
+	background-color: grey;
+	color: blue;
+}*/
+#addForm
+	{
+		margin-top: 5%;
+		position: relative;
+		width: 20%;
+		margin-left: 40%;
+	}
+body
+{
+	font-family: "Verdana";
+	font-size: 1.2em;
+}
+#tableau td:nth-child(odd)
+{
+	position: relative;
+	width: 30%;
+}
