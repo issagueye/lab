@@ -1,5 +1,5 @@
 <?php
-require_once ('../application/config/Database.php') ;
+require_once ('./application/config/Database.php') ;
 session_start();
 if(isset($_GET["nt"])
 ){
@@ -15,121 +15,121 @@ if ( isset($_GET['page'])){
     $page = 'index';
 }
 if ($page ==='index'){
-    require_once ('../application/controllers/AuthController.php');
+    require_once ('./application/controllers/AuthController.php');
     $controller =  new AuthController();
     $controller->home();
 }elseif ($page ==='accueil'){
-    require_once ('../application/controllers/AccueilController.php');
+    require_once ('./application/controllers/AccueilController.php');
     $controller =  new AccueilController() ;
     $controller->accueil();
 }
 elseif ($page ==='histologie'){
-    require_once('../application/controllers/HistologieController.php');
+    require_once('./application/controllers/HistologieController.php');
     $controller =  new HistologieControlLer() ;
     $controller->histoAccueil() ;
 }
 elseif ($page ==='apercu') {
-    require_once('../application/controllers/apercuController.php');
+    require_once('./application/controllers/apercuController.php');
     $controller = new apercuController();
     $controller->apercuAccueil();
 }
 elseif ($page ==='frottisM'){
-    require_once('../application/controllers/FrottisMController.php');
+    require_once('./application/controllers/FrottisMController.php');
     $controller =  new FrottisMController() ;
     $controller->FrottisMAccueil() ;
 }
 elseif ($page ==='frottisV'){
-    require_once('../application/controllers/FrottisVController.php');
+    require_once('./application/controllers/FrottisVController.php');
     $controller =  new frottisVController() ;
     $controller->frottisVAccueil() ;
 }
 elseif ($page ==='myelo'){
-    require_once('../application/controllers/MyeloController.php');
+    require_once('./application/controllers/MyeloController.php');
     $controller =  new myeloController() ;
     $controller->myeloAccueil() ;
 }
 elseif ($page ==='coital'){
-    require_once('../application/controllers/testPCController.php');
+    require_once('./application/controllers/testPCController.php');
     $controller =  new testPCController() ;
     $controller->testPCAccueil() ;
 }
 elseif ($page ==='spermo'){
-    require_once('../application/controllers/spermoController.php');
+    require_once('./application/controllers/spermoController.php');
     $controller =  new spermoController() ;
     $controller->spermoAccueil() ;
 }
 elseif ($page ==='reception'){
-    require_once('../application/controllers/receptionController.php');
+    require_once('./application/controllers/receptionController.php');
     $controller =  new receptionController() ;
     $controller->receptionAccueil() ;
 }
 
 elseif ($page ==='formrecep'){
-    require_once('../application/controllers/formrecepController.php');
+    require_once('./application/controllers/formrecepController.php');
     $controller =  new formrecepController() ;
     $controller->formrecepAccueil() ;
 }
 elseif ($page ==='lastrec'){
-    require_once('../application/controllers/LastRecController.php');
+    require_once('./application/controllers/LastRecController.php');
     $controller =  new lastRecController() ;
     $controller->lastRecAccueil() ;
 }
 elseif ($page ==='charts'){
-    require_once('../application/controllers/ChartController.php');
+    require_once('./application/controllers/ChartController.php');
     $controller =  new ChartController() ;
     $controller->ChartAccueil() ;
 }
 elseif ($page ==='delete'){
-    require_once('../application/controllers/deleteController.php');
+    require_once('./application/controllers/deleteController.php');
     $controller =  new deleteController() ;
     $controller->deleteAccueil() ;
 }
 elseif ($page ==='archive'){
-    require_once('../application/controllers/archiveController.php');
+    require_once('./application/controllers/archiveController.php');
     $controller =  new archiveController() ;
     $controller->archiveAccueil() ;
 }
 elseif ($page ==='archives'){
-    require_once('../application/controllers/archivesController.php');
+    require_once('./application/controllers/archivesController.php');
     $controller =  new archivesController() ;
     $controller->archivesAccueil() ;
 }
 
 elseif ($page ==='archivesana'){
-    require_once('../application/controllers/archivesAnalysesController.php');
+    require_once('./application/controllers/archivesAnalysesController.php');
     $controller =  new archivesAnalysesController() ;
     $controller->archivesAnalysesAccueil() ;
 }
 
 elseif ($page ==='accueiladmin'){
-    require_once('../application/controllers/AccueilAdminController.php');
+    require_once('./application/controllers/AccueilAdminController.php');
      $controller = new accueilAdminController;
     $controller->accueilAdmin();
 }
 elseif ($page ==='accueilMedecin') {
-    require_once('../application/controllers/accueilMedecinController.php');
+    require_once('./application/controllers/accueilMedecinController.php');
     $controller = new accueilMedecinController();
     $controller->accueilMedecin();
 }
 elseif ($page ==='imprimer'){
-    require_once('../application/controllers/imprimerController.php');
+    require_once('./application/controllers/imprimerController.php');
     $controller =  new imprimerController() ;
     $controller->imprimerAccueil() ;
 }
 elseif ($page ==='accueilRecep') {
-    require_once('../application/controllers/AccueilRecepControler.php');
+    require_once('./application/controllers/AccueilRecepControler.php');
     $controller = new accueilRecepController();
     $controller->accueilRecep();
 }
 
 elseif ($page ==='modifServ') {
-    require_once('../application/controllers/modifServController.php');
+    require_once('./application/controllers/modifServController.php');
     $controller = new modifServController();
     $controller->modifServ();
 }
 
 elseif ($page ==='admin') {
-    require_once('../application/controllers/AdminController.php');
+    require_once('./application/controllers/AdminController.php');
     
     $controller =  new AdminController() ;
     $controller->accueil_admin() ;
@@ -140,7 +140,7 @@ elseif ($page ==='admin') {
 
 }
 elseif ($page ==='codage') {
-    require_once('../application/controllers/codage.php');
+    require_once('./application/controllers/codage.php');
     $controller = new codageController();
     $controller->codage();
 }
@@ -183,7 +183,7 @@ $(document).ready(function(){
         var inputVal = $(this).val();
         var resultDropdown = $(this).siblings(".result");
         if(inputVal.length >2){
-            $.get("../application/views/includes/inc/search_fetch.php", {term: inputVal}).done(function(data){
+            $.get("./application/views/includes/inc/search_fetch.php", {term: inputVal}).done(function(data){
                 // Display the returned data in browser
                 resultDropdown.html(data);
             });
@@ -196,7 +196,7 @@ $(document).ready(function(){
 });
 </script>
 
- <script src="../application/views/assets/audio/js/ion.sound.js"></script>
+ <script src="./application/views/assets/audio/js/ion.sound.js"></script>
        
        <script>
 
@@ -211,7 +211,7 @@ $(document).ready(function(){
         var inputVal = $(this).val();
         var resultDropdown = $(this).siblings(".result");
         if(inputVal.length >2){
-            $.get("../application/views/inc/search_fetch.php", {term: inputVal}).done(function(data){
+            $.get("./application/views/inc/search_fetch.php", {term: inputVal}).done(function(data){
                 // Display the returned data in browser
                 resultDropdown.html(data);
             });
@@ -229,7 +229,7 @@ $(document).ready(function(){
                 {name: "beer_can_opening"},
                 {name: "bell_ring"}
             ],
-            path: "../application/views/assets/audio/sounds/",
+            path: "./application/views/assets/audio/sounds/",
             preload: true,
             volume: 1.0
         });
@@ -246,7 +246,7 @@ $(document).ready(function(){
 
 function update(){
 $.ajax({
-  url: '../application/views/includes/inc/notif_fetch.php?list=1',
+  url: './application/views/includes/inc/notif_fetch.php?list=1',
   dataType: 'html',
   success: function(data) {
      
@@ -254,7 +254,7 @@ $.ajax({
   }
 });
 $.ajax({
-  url: '../application/views/includes/inc/notif_fetch.php?count=1',
+  url: './application/views/includes/inc/notif_fetch.php?count=1',
   dataType: 'html',
   success: function(data1) {
      
@@ -262,7 +262,7 @@ $.ajax({
   }
 });
 $.ajax({
-  url: '../application/views/includes/inc/notif_fetch.php?notifier=1',
+  url: './application/views/includes/inc/notif_fetch.php?notifier=1',
   dataType: 'html',
   success: function(data) {
      
@@ -271,7 +271,7 @@ $.ajax({
 });
 
 $.ajax({
-  url: '../application/views/includes/inc/notif_fetch.php?popupwindows=1',
+  url: './application/views/includes/inc/notif_fetch.php?popupwindows=1',
   dataType: 'html',
   success: function(data) {
      
